@@ -63,7 +63,7 @@ public class PatientRegistrationPage extends SetUp {
     		Thread.sleep(1000);
     }
           
-	@FindBy(xpath = "(//a[normalize-space()='🚶 Walk-in'])[1]")
+    @FindBy(linkText = "🚶 Walk-in")
 	WebElement walkin;
 	public void walkInBtn() throws InterruptedException {
 		walkin.click();
@@ -197,7 +197,7 @@ public class PatientRegistrationPage extends SetUp {
     public void unitTeam() throws InterruptedException {
     		unit.click();
     		
-    		WebElement unOption = driver.findElement(By.xpath("//div[@id='tomselect-4-opt-3']"));
+    		WebElement unOption = driver.findElement(By.xpath("//div[@id='tomselect-4-opt-2']"));
     		unOption.click();
     		Thread.sleep(1000);   		
     }
