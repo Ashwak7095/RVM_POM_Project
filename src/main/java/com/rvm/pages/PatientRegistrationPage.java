@@ -63,7 +63,7 @@ public class PatientRegistrationPage extends SetUp {
     		Thread.sleep(1000);
     }
           
-    @FindBy(linkText = "🚶 Walk-in")
+    @FindBy(partialLinkText = "Walk-in")
 	WebElement walkin;
 	public void walkInBtn() throws InterruptedException {
 		walkin.click();
